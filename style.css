@@ -1,0 +1,259 @@
+.display_none {
+  display: none;
+}
+
+#top_panel {
+  height: 50px;
+  margin: 12px 12px 0;
+}
+
+#top_panel h1 {
+  margin: 0;
+}
+
+#group_container {
+    padding: 12px;
+}
+
+
+#person_dialog_group_current {
+    position: relative;
+    height: 24px;
+}
+
+#person_dialog_group_current_icon {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 34px;
+  line-height: 20px;
+  top: 50%;
+  margin-top: -10px;
+  right: 2px;
+}
+
+#person_dialog_group_current_icon:before {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #ffffff;
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 5px;
+}
+
+#person_dialog_ok {
+  border: 1px solid cornflowerblue;
+}
+
+#person_dialog_cancel {
+  border: 1px solid cornflowerblue;
+}
+
+#alert {
+  position: absolute;
+  width: 300px;
+  border: 1px solid lightcoral;
+  left: 50%;
+  top: 50%;
+  margin-top: -40px;
+  margin-left: -150px;
+  text-align: center;
+  background-color: #fff;
+  height: 110px;
+}
+
+#alert_text {
+    margin: 14px 0;
+}
+
+#alert_button {
+  border: 1px solid lightcoral;
+  width: 100px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.no_text_select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.top_panel_button
+{
+  height: 50px;
+  float: right;
+  border-radius: 25px;
+  cursor: pointer;
+  line-height: 50px;
+  text-align: center;
+  padding: 0 25px;
+}
+
+#person_button {
+  border: 1px solid cornflowerblue;
+}
+
+#group_button {
+  margin-left: 10px;
+  border: 1px solid springgreen;
+}
+
+#group_template {
+  display: none;
+}
+
+#person_template {
+  display: none;
+}
+
+.group_view {
+  border: 1px solid springgreen;
+  width: 200px;
+  height: 400px;
+  padding: 10px;
+  overflow: auto;
+  display: inline-block;
+  margin: 5px;
+}
+
+.group_header {
+  position: relative;
+}
+
+.group_title {
+  line-height: 35px;
+}
+
+.group_remove {
+  background-color: springgreen;
+  font-size: 59px;
+  line-height: 36px;
+  color: #ffffff;
+  height: 35px;
+  width: 35px;
+  float: right;
+  cursor: pointer;
+}
+
+.group_remove:before {
+    content: "×";
+}
+
+#person_dialog {
+  position: absolute;
+  width: 300px;
+  border: 1px solid cornflowerblue;
+  left: 50%;
+  top: 50%;
+  margin-top: -40px;
+  margin-left: -150px;
+  text-align: center;
+  background-color: #fff;
+}
+
+#person_dialog_group_select_container {
+  width: 100px;
+  display: inline-block;
+  border: 1px solid cornflowerblue;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+
+#person_dialog_group_select_container.display_none {
+  display: none;
+}
+
+#person_dialog_group_select_label {
+  display: inline-block;
+}
+#person_dialog_group_select_list {
+  background-color: #fff;
+  border: 1px solid cornflowerblue;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.person_dialog_group_option {
+  height: 20px;
+  line-height: 20px;
+}
+
+.person_dialog_group_option:hover {
+  background-color: cornflowerblue;
+  color: #fff;
+}
+
+.person_view {
+  border: 1px solid springgreen;
+  height: 28px;
+  margin: 10px 0;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 25px;
+  padding-left: 5px;
+}
+
+.person_name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.person_remove {
+  height: 20px;
+  width: 20px;
+  background-color: springgreen;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 34px;
+  line-height: 20px;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  right: 5px;
+}
+
+.person_remove:before {
+    content: "×";
+}
+
+#person_dialog_selects_container {
+  text-align: right;
+  margin: 5px;
+}
+
+#person_dialog_buttons_container {
+  text-align: center;
+  margin: 5px;
+}
+
+.person_dialog_button {
+  display: inline-block;
+  width: 100px;
+  cursor: pointer;
+}
+
+#person_dialog_name {
+  margin: 5px;
+  border: 1px solid cornflowerblue;
+  padding: 4px;
+}

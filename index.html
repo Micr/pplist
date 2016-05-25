@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div id="top_panel" >
+      <div id="group_button" class="top_panel_button no_text_select">New Group</div>
+      <div id="person_button" class="top_panel_button no_text_select">New Person</div>
+      <h1>Welcome to Pplist</h1>
+    </div>
+    <div id="group_container" >
+    </div>
+    <div id=template_container class="display_none">
+      <div class="group_view">
+        <div class="group_header">
+          <div class="group_remove" ></div>
+          <div class="group_title" ></div>
+        </div>
+      </div>
+      <div class="person_view">
+        <div class="person_remove" ></div>
+        <a class="person_name" ></a>
+      </div>
+    </div>
+    <div id="person_dialog" class="display_none">
+      <input id="person_dialog_name" type="text"/>
+      <div id="person_dialog_selects_container" class="no_text_select">
+        <div id="person_dialog_group_select_label" >Group:</div>
+        <div id="person_dialog_group_select_container" >
+          <div id="person_dialog_group_current" >
+            <a id="person_dialog_group_current_text"></a>
+            <div id="person_dialog_group_current_icon"></div>
+          </div>
+            <ul id="person_dialog_group_select_list" class="display_none" >
+            </ul>
+        </div>
+      </div>
+      <div id="person_dialog_buttons_container" class="no_text_select">
+        <div id="person_dialog_ok" class="person_dialog_button">Add</div>
+        <div id="person_dialog_cancel" class="person_dialog_button">Cancel</div>
+      </div>
+    </div>
+    <div id="alert" class="display_none">
+        <div id="alert_text"></div>
+        <div id="alert_button">Ok</div>
+    </div>
+  </body>
+</html>
