@@ -137,17 +137,19 @@
 
 .group_remove {
   background-color: springgreen;
-  font-size: 59px;
-  line-height: 36px;
   color: #ffffff;
   height: 35px;
   width: 35px;
   float: right;
   cursor: pointer;
+  text-align: center;
+  line-height: 30px;
 }
 
 .group_remove:before {
     content: "×";
+    font-size: 43px;
+    font-family: verdana;
 }
 
 #person_dialog {
