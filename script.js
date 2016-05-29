@@ -20,7 +20,7 @@ var presenter, groupModel, groupCollection;
 var alertWindowManager;
 var lastGroupId = 0;
 var groupLabel = 'Group №';
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function (event) {
 
   body = document.body;
   alert = document.getElementById('alert');
@@ -41,16 +41,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
   presenter.addGroup();
 
-  document.getElementById('group_button').addEventListener('click', function () {
+  document.getElementById('group_button').addEventListener('click', function (event) {
     presenter.addGroup();
   });
 
-  document.getElementById('person_button').addEventListener('click', function () {
+  document.getElementById('person_button').addEventListener('click', function (event) {
     event.stopPropagation();
     showPersonDialog();
   });
 
-  document.addEventListener('keydown', function () {
+  document.addEventListener('keydown', function (event) {
     if (event.keyCode == 13 && !personDialog.classList.contains('display_none'))
     {
       presenter.addPerson();
@@ -59,12 +59,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  personDialogAdd.addEventListener('click', function () {
+  personDialogAdd.addEventListener('click', function (event) {
     event.stopPropagation();
     presenter.addPerson();
   });
 
-  personDialogCancel.addEventListener('click', function () {
+  personDialogCancel.addEventListener('click', function (event) {
     personDialog.classList.add('display_none');
   });
 
@@ -100,13 +100,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function personDialogClickClose (event) {
   if (!personDialog.contains(event.target)) {
-    self.hidePersonDialog();
+    hidePersonDialog();
   }
 }
 
-function personDialogEscClose () {
+function personDialogEscClose (event) {
   if (event.keyCode === 27) {
-    self.hidePersonDialog();
+    hidePersonDialog();
   }
 }
 
