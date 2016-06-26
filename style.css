@@ -2,6 +2,10 @@
   display: none;
 }
 
+body {
+  background: rgba(191, 194, 243, 0.58);
+}
+
 #top_panel {
   height: 50px;
   margin: 12px 12px 0;
@@ -9,6 +13,8 @@
 
 #top_panel h1 {
   margin: 0;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.29);
 }
 
 #group_container {
@@ -19,13 +25,18 @@
 #person_dialog_group_current {
     position: relative;
     height: 24px;
+    background: #fff;
+}
+
+#person_dialog_group_current_text {
+  color: rgba(0, 0, 0, 0.9);
 }
 
 #person_dialog_group_current_icon {
   position: absolute;
   height: 20px;
   width: 20px;
-  background-color: cornflowerblue;
+  background-color: #9dc0ff;
   cursor: pointer;
   color: #ffffff;
   font-size: 34px;
@@ -49,24 +60,23 @@
 }
 
 #person_dialog_ok {
-  border: 1px solid cornflowerblue;
+  border: 1px solid #fff;
+  color: #fff;
 }
 
-#person_dialog_cancel {
-  border: 1px solid cornflowerblue;
-}
+#person_dialog_cancel {border: 1px solid #fff;color: #fff;}
 
 #alert {
   position: absolute;
   width: 300px;
-  border: 1px solid lightcoral;
   left: 50%;
   top: 50%;
   margin-top: -40px;
   margin-left: -150px;
   text-align: center;
-  background-color: #fff;
-  height: 110px;
+  height: 118px;
+  background: #ffb6b6;
+  color: #fff;
 }
 
 #alert_text {
@@ -74,7 +84,7 @@
 }
 
 #alert_button {
-  border: 1px solid lightcoral;
+  border: 1px solid #fff;
   width: 100px;
   display: inline-block;
   cursor: pointer;
@@ -101,12 +111,22 @@
 }
 
 #person_button {
-  border: 1px solid cornflowerblue;
+  background-color: #9dc0ff;
+  color: #fff;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 2px 1px 2px rgba(0,0,0,.11);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 1px 1px 2px rgba(0,0,0,.11);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 1px 1px 2px rgba(0,0,0,.11);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.11);
 }
 
 #group_button {
   margin-left: 10px;
-  border: 1px solid springgreen;
+  background-color: #7bffbd;
+  color: #fff;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 1px 1px 2px rgba(0,0,0,.11);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 1px 1px 2px rgba(0,0,0,.11);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 1px 1px 2px rgba(0,0,0,.11);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.11);
 }
 
 #group_template {
@@ -118,13 +138,18 @@
 }
 
 .group_view {
-  border: 1px solid springgreen;
+  border: 1px solid #7bffbd;
   width: 200px;
   height: 400px;
   padding: 10px;
   overflow: auto;
   display: inline-block;
   margin: 5px;
+  background: #7bffbd;
+  border-bottom-color: #b3b3b3;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 2px 1px 2px rgba(0,0,0,.11);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 2px 1px 2px rgba(0,0,0,.11);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 2px 1px 2px rgba(0,0,0,.11);
 }
 
 .group_header {
@@ -133,10 +158,12 @@
 
 .group_title {
   line-height: 35px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.11);
 }
 
 .group_remove {
-  background-color: springgreen;
+  background-color: #7bffbd;
   color: #ffffff;
   height: 35px;
   width: 35px;
@@ -144,6 +171,7 @@
   cursor: pointer;
   text-align: center;
   line-height: 30px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.11);
 }
 
 .group_remove:before {
@@ -155,19 +183,20 @@
 #person_dialog {
   position: absolute;
   width: 300px;
-  border: 1px solid cornflowerblue;
   left: 50%;
   top: 50%;
   margin-top: -40px;
   margin-left: -150px;
   text-align: center;
-  background-color: #fff;
+  background-color: #9dc0ff;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 2px 1px 2px rgba(0,0,0,.11);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 2px 1px 2px rgba(0,0,0,.11);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 2px 1px 2px rgba(0,0,0,.11);
 }
 
 #person_dialog_group_select_container {
   width: 100px;
   display: inline-block;
-  border: 1px solid cornflowerblue;
   position: relative;
   cursor: pointer;
   text-align: center;
@@ -179,6 +208,7 @@
 
 #person_dialog_group_select_label {
   display: inline-block;
+  color: #fff;
 }
 #person_dialog_group_select_list {
   background-color: #fff;
@@ -203,14 +233,19 @@
 }
 
 .person_view {
-  border: 1px solid springgreen;
   height: 28px;
   margin: 10px 0;
   position: relative;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding: 2px 0;
   padding-right: 25px;
   padding-left: 5px;
+  background: #fff;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 1px 1px 2px rgba(0,0,0,.11);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 1px 1px 2px rgba(0,0,0,.11);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 1px 1px 2px rgba(0,0,0,.11);
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .person_name {
@@ -223,7 +258,7 @@
 .person_remove {
   height: 20px;
   width: 20px;
-  background-color: springgreen;
+  background-color: #7bffbd;
   cursor: pointer;
   color: #ffffff;
   font-size: 34px;
@@ -256,6 +291,7 @@
 
 #person_dialog_name {
   margin: 5px;
-  border: 1px solid cornflowerblue;
   padding: 4px;
+  border: transparent;
+  color: rgba(0, 0, 0, 0.9);
 }
